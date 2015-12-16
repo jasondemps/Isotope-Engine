@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B86FDC7F-15CF-4C47-A797-C782998D2524}</ProjectGuid>
+    <RootNamespace>Isotope</RootNamespace>
+    <ProjectName>Engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\frameworks\Lua\include;..\..\..\frameworks\SDL\include;..\..\..\frameworks\FMOD\include;..\..\..\frameworks\libpng\include;..\..\..\frameworks\zlib\include;..\..\..\frameworks\TinyDir\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\frameworks\SDL\lib\x86;$(SolutionDir)..\..\frameworks\Lua\lib;$(SolutionDir)..\..\frameworks\FMOD\lib;$(SolutionDir)..\..\frameworks\SOIL\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;opengl32.lib;glu32.lib;liblua52.a;SOIL.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\frameworks\Lua\include;..\..\..\frameworks\SDL\include;..\..\..\frameworks\FMOD\include;..\..\..\frameworks\libpng\include;..\..\..\frameworks\zlib\include;..\..\..\frameworks\TinyDir\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\frameworks\SDL\lib\x86;$(SolutionDir)..\..\frameworks\Lua\lib;$(SolutionDir)..\..\frameworks\FMOD\lib;$(SolutionDir)..\..\frameworks\SOIL\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;opengl32.lib;glu32.lib;liblua52.a;SOIL.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\graphics\drawableFactory.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\graphicsmodule.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\mesh.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\sprite.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\technique.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\texture.cpp" />
+    <ClCompile Include="..\..\..\src\math\Matrix4.cpp" />
+    <ClCompile Include="..\..\..\src\math\Point4.cpp" />
+    <ClCompile Include="..\..\..\src\math\Vector4.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\AABB.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\Circle.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\CollisionManifold.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\ConvexPolygon.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\EPA.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\Force.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\GJK.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\Manifold.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\PhysicsBody.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\SAT.cpp" />
+    <ClCompile Include="..\..\..\src\Physics\World.cpp" />
+    <ClCompile Include="..\..\..\src\resources\assetmanager.cpp" />
+    <ClCompile Include="..\..\..\src\resources\filesystem.cpp" />
+    <ClCompile Include="..\..\..\src\resources\pngloader.cpp" />
+    <ClCompile Include="..\..\..\src\system\audio.cpp" />
+    <ClCompile Include="..\..\..\src\system\engine.cpp" />
+    <ClCompile Include="..\..\..\src\system\event.cpp" />
+    <ClCompile Include="..\..\..\src\system\gamepad.cpp" />
+    <ClCompile Include="..\..\..\src\system\keyboard.cpp" />
+    <ClCompile Include="..\..\..\src\system\module.cpp" />
+    <ClCompile Include="..\..\..\src\system\moduleentry.cpp" />
+    <ClCompile Include="..\..\..\src\system\modulehandler.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\renderable.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\reqs\gl_core_3_3.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\reqs\wgl\wgl_core_3_3.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\window.cpp" />
+    <ClCompile Include="..\..\..\src\log\log.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\graphics\drawable.h" />
+    <ClInclude Include="..\..\..\src\graphics\drawableFactory.h" />
+    <ClInclude Include="..\..\..\src\graphics\glinit.h" />
+    <ClInclude Include="..\..\..\src\graphics\graphicsmodule.h" />
+    <ClInclude Include="..\..\..\src\graphics\Image.h" />
+    <ClInclude Include="..\..\..\src\graphics\mesh.h" />
+    <ClInclude Include="..\..\..\src\graphics\sprite.h" />
+    <ClInclude Include="..\..\..\src\graphics\technique.h" />
+    <ClInclude Include="..\..\..\src\graphics\texture.h" />
+    <ClInclude Include="..\..\..\src\graphics\vertex.h" />
+    <ClInclude Include="..\..\..\src\math\MathUtils.h" />
+    <ClInclude Include="..\..\..\src\math\Matrix4.h" />
+    <ClInclude Include="..\..\..\src\math\Point4.h" />
+    <ClInclude Include="..\..\..\src\math\Vector4.h" />
+    <ClInclude Include="..\..\..\src\Physics\AABB.h" />
+    <ClInclude Include="..\..\..\src\Physics\Circle.h" />
+    <ClInclude Include="..\..\..\src\Physics\CollisionManifold.h" />
+    <ClInclude Include="..\..\..\src\Physics\ConvexPolygon.h" />
+    <ClInclude Include="..\..\..\src\Physics\EPA.h" />
+    <ClInclude Include="..\..\..\src\Physics\Force.h" />
+    <ClInclude Include="..\..\..\src\Physics\GJK.h" />
+    <ClInclude Include="..\..\..\src\Physics\Manifold.h" />
+    <ClInclude Include="..\..\..\src\Physics\PhysicsBody.h" />
+    <ClInclude Include="..\..\..\src\Physics\SAT.h" />
+    <ClInclude Include="..\..\..\src\Physics\Shape.h" />
+    <ClInclude Include="..\..\..\src\Physics\World.h" />
+    <ClInclude Include="..\..\..\src\resources\asset.h" />
+    <ClInclude Include="..\..\..\src\resources\assetmanager.h" />
+    <ClInclude Include="..\..\..\src\resources\filesystem.h" />
+    <ClInclude Include="..\..\..\src\resources\pngloader.h" />
+    <ClInclude Include="..\..\..\src\system\audio.h" />
+    <ClInclude Include="..\..\..\src\system\engine.h" />
+    <ClInclude Include="..\..\..\src\system\event.h" />
+    <ClInclude Include="..\..\..\src\system\gamepad.h" />
+    <ClInclude Include="..\..\..\src\system\keyboard.h" />
+    <ClInclude Include="..\..\..\src\system\eventlistener.h" />
+    <ClInclude Include="..\..\..\src\system\message.h" />
+    <ClInclude Include="..\..\..\src\system\module.h" />
+    <ClInclude Include="..\..\..\src\system\moduleentry.h" />
+    <ClInclude Include="..\..\..\src\system\modulehandler.h" />
+    <ClInclude Include="..\..\..\src\graphics\renderable.h" />
+    <ClInclude Include="..\..\..\src\graphics\reqs\gl_core_3_3.hpp" />
+    <ClInclude Include="..\..\..\src\graphics\reqs\wgl\wgl_core_3_3.hpp" />
+    <ClInclude Include="..\..\..\src\graphics\window.h" />
+    <ClInclude Include="..\..\..\src\log\log.h" />
+    <ClInclude Include="..\..\..\src\patterns\singleton.hpp" />
+    <ClInclude Include="..\..\..\src\system\messagehandle.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

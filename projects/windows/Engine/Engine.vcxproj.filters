@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\system\engine.cpp">
+      <Filter>System\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\system\module.cpp">
+      <Filter>System\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\system\modulehandler.cpp">
+      <Filter>System\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\system\moduleentry.cpp">
+      <Filter>System\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\log\log.cpp">
+      <Filter>System\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\window.cpp">
+      <Filter>Graphics\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\reqs\gl_core_3_3.cpp">
+      <Filter>Graphics\Reqs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\reqs\wgl\wgl_core_3_3.cpp">
+      <Filter>Graphics\Reqs\wgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\renderable.cpp">
+      <Filter>Graphics\Pipeline\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\mesh.cpp">
+      <Filter>Graphics\Pipeline\Renderable\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\texture.cpp">
+      <Filter>Graphics\Pipeline\Renderable\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\graphicsmodule.cpp">
+      <Filter>Graphics\GraphicsModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\sprite.cpp">
+      <Filter>Graphics\Pipeline\Drawables\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\system\audio.cpp">
+      <Filter>System\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\system\event.cpp">
+      <Filter>System\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\system\keyboard.cpp">
+      <Filter>System\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\system\gamepad.cpp">
+      <Filter>System\Gamepad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\technique.cpp">
+      <Filter>Graphics\Pipeline\Technique</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\CollisionManifold.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\Force.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\Manifold.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\PhysicsBody.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\World.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\ConvexPolygon.cpp">
+      <Filter>Physics\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\Circle.cpp">
+      <Filter>Physics\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\AABB.cpp">
+      <Filter>Physics\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\SAT.cpp">
+      <Filter>Physics\Collision Detection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\GJK.cpp">
+      <Filter>Physics\Collision Detection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Physics\EPA.cpp">
+      <Filter>Physics\Collision Detection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\math\Matrix4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\resources\assetmanager.cpp">
+      <Filter>System\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\math\Vector4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\math\Point4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\resources\filesystem.cpp">
+      <Filter>System\Assets\Filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\drawableFactory.cpp">
+      <Filter>Graphics\Pipeline\Drawables\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\resources\pngloader.cpp">
+      <Filter>System\Assets\Image Types\PNG</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="System">
+      <UniqueIdentifier>{a3eddf22-42fa-4023-b73c-86ac53edcf35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{2b9e6c70-21df-411d-9909-b7508a108bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\Patterns">
+      <UniqueIdentifier>{080cc2cb-7df9-4edd-bb4f-540b41a772e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{afc34274-421a-4a6b-8062-170c34f83a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Audio">
+      <UniqueIdentifier>{04d88263-9a5a-4fd0-928c-95af66bcda0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{1fd381d8-f9bb-4043-ab53-b231c0ead383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Window">
+      <UniqueIdentifier>{06dceb0b-fb19-4bd5-bab9-52f76fc473bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Reqs">
+      <UniqueIdentifier>{555e36f0-993c-4cec-91c1-bbd7c8e07877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Reqs\wgl">
+      <UniqueIdentifier>{a12fcf25-7c23-4e68-ada6-2bc6a2a3ba07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Pipeline">
+      <UniqueIdentifier>{9a6adc9e-ee2b-42d2-b789-2dcaed57c837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Pipeline\Renderable">
+      <UniqueIdentifier>{a4656e44-da12-4142-bf59-d8ec1c73b300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Pipeline\Renderable\Mesh">
+      <UniqueIdentifier>{1acaf66d-6ac6-4e7e-be53-21fa8dec1bf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Pipeline\Renderable\Texture">
+      <UniqueIdentifier>{267e78f4-f3e9-4666-bcf9-58958c93b421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Pipeline\Drawables">
+      <UniqueIdentifier>{0a307629-6ff2-409e-bb89-1db5a61368cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Pipeline\Drawables\Sprite">
+      <UniqueIdentifier>{dfd05fb4-b3d3-4a1b-8dcc-4b68981eaeef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Pipeline\Drawables\Factory">
+      <UniqueIdentifier>{358bde20-4017-4384-838c-f4eb453a19a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsModule">
+      <UniqueIdentifier>{fe043cda-699e-40c7-8cc0-25f00c0cd7d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Event">
+      <UniqueIdentifier>{284f701c-0f19-4f10-b384-5e941efbcec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Keyboard">
+      <UniqueIdentifier>{35c046e9-6d84-4e29-a8b6-c1d7c05e2686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Gamepad">
+      <UniqueIdentifier>{55b0c3f3-9a25-4caf-8f54-56082cd79d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Pipeline\Technique">
+      <UniqueIdentifier>{3aff8354-2ca4-42ad-bf4a-48bde15b4007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Logging">
+      <UniqueIdentifier>{6348f175-eeb6-4839-a055-7a3da8388d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Engine">
+      <UniqueIdentifier>{8867dfd4-eaf2-4db4-ac5a-7783dc01a81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Modules">
+      <UniqueIdentifier>{a576894b-05a9-4d85-b643-bdc093165b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{23c64b03-0356-4868-8725-25509a7cfc30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Shape">
+      <UniqueIdentifier>{73e6d037-52e3-4703-bd02-457937d5cd65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Collision Detection">
+      <UniqueIdentifier>{621443cf-a446-434b-92ce-97f1f6be6a79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Assets">
+      <UniqueIdentifier>{73d5e660-7b48-4536-a466-4bbd9efb2e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Assets\Filesystem">
+      <UniqueIdentifier>{762441ca-3d2a-40f5-8d79-d05a9c45b8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Messaging">
+      <UniqueIdentifier>{d66ec706-8466-41e2-9884-65a3cca178eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Messaging\Handle">
+      <UniqueIdentifier>{ae5630a0-b8a9-4206-ac2b-6b8fcc5b0e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Assets\Image Types">
+      <UniqueIdentifier>{faeae866-5f37-49ed-9324-a707d00dbd3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Assets\Image Types\PNG">
+      <UniqueIdentifier>{111fd414-212c-4814-8af2-5ff1d89a880d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Assets\Image Types\BMP">
+      <UniqueIdentifier>{691cc460-412b-4045-aaf0-ae486e60798f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\system\engine.h">
+      <Filter>System\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\modulehandler.h">
+      <Filter>System\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\module.h">
+      <Filter>System\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\moduleentry.h">
+      <Filter>System\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\patterns\singleton.hpp">
+      <Filter>Util\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\log\log.h">
+      <Filter>System\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\window.h">
+      <Filter>Graphics\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\reqs\gl_core_3_3.hpp">
+      <Filter>Graphics\Reqs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\reqs\wgl\wgl_core_3_3.hpp">
+      <Filter>Graphics\Reqs\wgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\renderable.h">
+      <Filter>Graphics\Pipeline\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\vertex.h">
+      <Filter>Graphics\Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\mesh.h">
+      <Filter>Graphics\Pipeline\Renderable\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\texture.h">
+      <Filter>Graphics\Pipeline\Renderable\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\graphicsmodule.h">
+      <Filter>Graphics\GraphicsModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\drawable.h">
+      <Filter>Graphics\Pipeline\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\sprite.h">
+      <Filter>Graphics\Pipeline\Drawables\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\audio.h">
+      <Filter>System\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\event.h">
+      <Filter>System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\eventlistener.h">
+      <Filter>System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\keyboard.h">
+      <Filter>System\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\glinit.h">
+      <Filter>Graphics\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\gamepad.h">
+      <Filter>System\Gamepad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\technique.h">
+      <Filter>Graphics\Pipeline\Technique</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\CollisionManifold.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\Force.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\Manifold.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\PhysicsBody.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\World.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\Shape.h">
+      <Filter>Physics\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\ConvexPolygon.h">
+      <Filter>Physics\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\Circle.h">
+      <Filter>Physics\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\AABB.h">
+      <Filter>Physics\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\SAT.h">
+      <Filter>Physics\Collision Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\GJK.h">
+      <Filter>Physics\Collision Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Physics\EPA.h">
+      <Filter>Physics\Collision Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\math\MathUtils.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\math\Matrix4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\resources\asset.h">
+      <Filter>System\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\resources\assetmanager.h">
+      <Filter>System\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\math\Vector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\math\Point4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\resources\filesystem.h">
+      <Filter>System\Assets\Filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\drawableFactory.h">
+      <Filter>Graphics\Pipeline\Drawables\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\message.h">
+      <Filter>System\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\system\messagehandle.h">
+      <Filter>System\Messaging\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\Image.h">
+      <Filter>Graphics\Pipeline\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\resources\pngloader.h">
+      <Filter>System\Assets\Image Types\PNG</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
